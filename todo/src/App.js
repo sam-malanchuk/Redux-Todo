@@ -1,25 +1,14 @@
 import React from 'react';
 import './App.css';
+import ToDoList from './components/ToDoList';
+import ToDoForm from './components/ToDoForm';
 
 function App() {
   return (
     <div className="App">
-      <h1>To-do List:</h1>
-      <ul class="toDoList">
-        <li>Mock up list</li>
-        <li>Mock up list</li>
-        <li>Mock up list</li>
-        <li>Mock up list</li>
-        <li>Mock up list</li>
-        <li>Mock up list</li>
-      </ul>
-      <form>
-        <input type="text" name="item" placeholder="Something to do..." />
-
-        <br /><br />
-        
-        <input type="submit" name="submit" value="Add to list" />
-      </form>
+      <h1>To-Do List:</h1>
+      <ToDoList />
+      <ToDoForm />
     </div>
   );
 }
