@@ -11,7 +11,8 @@ class ToDoForm extends React.Component {
     };
     submitHandler = event => {
         event.preventDefault();
-        this.props.addItem(event.target.value);
+        this.props.addItem(this.state.item);
+        this.setState({item: ''});
     }
     changeHandler = event => {
         this.setState({item: event.target.value});
