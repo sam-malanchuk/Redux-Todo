@@ -6,6 +6,7 @@ class ToDoForm extends React.Component {
     constructor(props) {
         super();
         this.state = {
+            toDos: [],
             item: ''
         }
     };
@@ -32,7 +33,7 @@ class ToDoForm extends React.Component {
 
 const mapStateToProps = state => {
     return {
-        toDo: state.toDo
+        toDos: state.toDos
     }
 }
 

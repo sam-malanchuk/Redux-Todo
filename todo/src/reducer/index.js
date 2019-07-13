@@ -3,7 +3,7 @@ import { ADD_ITEM } from '../actions';
 
 //create an initialState
 const initialState = {
-    toDo: []
+    toDos: []
 }
 
 export default function(state = initialState, action) {
@@ -11,7 +11,7 @@ export default function(state = initialState, action) {
         case ADD_ITEM:
             return {
                 ...state,
-                toDo: [...state.toDo, action.payload]
+                toDos: [...state.toDos, action.payload]
             }
         default: 
             return state
